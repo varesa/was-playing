@@ -9,13 +9,20 @@ use serde::Deserialize;
 use serde_json;
 
 #[derive(Debug,Deserialize)]
+struct Album {
+    name: String,
+}
+
+#[derive(Debug,Deserialize)]
 struct Song {
     name: String,
+    album: Album,
     uri: String,
 }
 
 #[derive(Debug,Deserialize)]
 struct SpotifyResponse {
+    timestamp: u64,
     item: Song,
 }
 
