@@ -39,6 +39,6 @@ pub fn run(auth: AuthInfo) {
             last_uri = parsed.item.uri;
         }
 
-        thread::sleep(Duration::new(1, 0));
+        thread::sleep(Duration::new(30, 0));
     }
 }
