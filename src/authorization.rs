@@ -1,7 +1,8 @@
 use std::env;
 
 use oauth2::{AuthorizationCode, AuthUrl, ClientId, ClientSecret, CsrfToken, RedirectUrl, Scope, TokenUrl, basic::BasicClient, reqwest::http_client};
-use rocket::http::RawStr;
+use rocket::http::{ContentType, RawStr};
+use rocket::response::Content;
 use rocket::Route;
 use rocket::State;
 
@@ -42,7 +43,7 @@ pub fn authenticate() {
 }
 
 #[get("/callback?<code>")]
-pub fn oauth2_callback(code: &RawStr, channel: State<AuthChannel>) -> &'static str {
+pub fn oauth2_callback(code: &RawStr, channel: State<AuthChannel>) -> Content<String> {
     let vars = Vars::get();
     let client = BasicClient::new(
         ClientId::new(vars.client_id),
@@ -58,7 +59,7 @@ pub fn oauth2_callback(code: &RawStr, channel: State<AuthChannel>) -> &'static s
     channel.channel_tx.lock().expect("Failed to acquire auth TX mutex")
         .send(AuthInfo { access_token: access_token }).expect("Failed to send auth information");
 
-    "OK"
+    Content(ContentType::HTML, "<html><body><script type='text/javascript'>window.close();</script></body></html>".into())
 }
 
 pub fn get_routes() -> Vec<Route> {
