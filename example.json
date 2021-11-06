@@ -1,0 +1,116 @@
+{
+  "timestamp" : 1636206981643,
+  "context" : {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/playlist/7eVgBq3DGa1h1pSRW5tlc7"
+    },
+    "href" : "https://api.spotify.com/v1/playlists/7eVgBq3DGa1h1pSRW5tlc7",
+    "type" : "playlist",
+    "uri" : "spotify:playlist:7eVgBq3DGa1h1pSRW5tlc7"
+  },
+  "progress_ms" : 36515,
+  "item" : {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3HohCe6uYgTtBJcV4PamyK"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3HohCe6uYgTtBJcV4PamyK",
+        "id" : "3HohCe6uYgTtBJcV4PamyK",
+        "name" : "Andrew Skeet",
+        "type" : "artist",
+        "uri" : "spotify:artist:3HohCe6uYgTtBJcV4PamyK"
+      }, {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/3PfJE6ebCbCHeuqO4BfNeA"
+        },
+        "href" : "https://api.spotify.com/v1/artists/3PfJE6ebCbCHeuqO4BfNeA",
+        "id" : "3PfJE6ebCbCHeuqO4BfNeA",
+        "name" : "London Philharmonic Orchestra",
+        "type" : "artist",
+        "uri" : "spotify:artist:3PfJE6ebCbCHeuqO4BfNeA"
+      } ],
+      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RU", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/3bBCofH4VxHokZ6fRCgbGx"
+      },
+      "href" : "https://api.spotify.com/v1/albums/3bBCofH4VxHokZ6fRCgbGx",
+      "id" : "3bBCofH4VxHokZ6fRCgbGx",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b273943c113347461b66ba58d116",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e02943c113347461b66ba58d116",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d00004851943c113347461b66ba58d116",
+        "width" : 64
+      } ],
+      "name" : "The Greatest Video Game Music",
+      "release_date" : "2011-11-18",
+      "release_date_precision" : "day",
+      "total_tracks" : 21,
+      "type" : "album",
+      "uri" : "spotify:album:3bBCofH4VxHokZ6fRCgbGx"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3V79CTgRnsDdJSTqKitROv"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3V79CTgRnsDdJSTqKitROv",
+      "id" : "3V79CTgRnsDdJSTqKitROv",
+      "name" : "Nobuo Uematsu",
+      "type" : "artist",
+      "uri" : "spotify:artist:3V79CTgRnsDdJSTqKitROv"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3HohCe6uYgTtBJcV4PamyK"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3HohCe6uYgTtBJcV4PamyK",
+      "id" : "3HohCe6uYgTtBJcV4PamyK",
+      "name" : "Andrew Skeet",
+      "type" : "artist",
+      "uri" : "spotify:artist:3HohCe6uYgTtBJcV4PamyK"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3PfJE6ebCbCHeuqO4BfNeA"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3PfJE6ebCbCHeuqO4BfNeA",
+      "id" : "3PfJE6ebCbCHeuqO4BfNeA",
+      "name" : "London Philharmonic Orchestra",
+      "type" : "artist",
+      "uri" : "spotify:artist:3PfJE6ebCbCHeuqO4BfNeA"
+    } ],
+    "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RU", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+    "disc_number" : 1,
+    "duration_ms" : 194172,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "SEWDL6018223"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/2xGDOy0pPf7XQSBhvJ9lzn"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/2xGDOy0pPf7XQSBhvJ9lzn",
+    "id" : "2xGDOy0pPf7XQSBhvJ9lzn",
+    "is_local" : false,
+    "name" : "Final Fantasy VIII: Liberi Fatali",
+    "popularity" : 33,
+    "preview_url" : "https://p.scdn.co/mp3-preview/70e10186304380429efe89473aa3a7999834edd5?cid=be16ae015527412fac6368f75829a93b",
+    "track_number" : 5,
+    "type" : "track",
+    "uri" : "spotify:track:2xGDOy0pPf7XQSBhvJ9lzn"
+  },
+  "currently_playing_type" : "track",
+  "actions" : {
+    "disallows" : {
+      "resuming" : true
+    }
+  },
+  "is_playing" : true
+}
+
