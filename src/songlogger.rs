@@ -44,6 +44,12 @@ pub fn run(auth: AuthInfo) {
             .get("https://api.spotify.com/v1/me/player/currently-playing")
             .header(AUTHORIZATION, format!("Bearer {}", auth.access_token.access_token().secret()))
             .send().expect("Failed to call spotify API");
+
+        if res.status() == 204 {
+            // Nothing playing
+            continue;
+        }
+
         let body = res.text().unwrap();
         let parsed: SpotifyResponse = serde_json::from_str(&body).expect("Failed to parse JSON");
 
