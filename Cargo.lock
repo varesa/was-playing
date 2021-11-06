@@ -1582,6 +1582,8 @@ dependencies = [
  "oauth2",
  "reqwest",
  "rocket",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]
