@@ -5,6 +5,8 @@ mod songlogger;
 
 use std::{sync::{Mutex, mpsc::{Receiver, Sender, channel}}, thread};
 
+use oauth2::{EmptyExtraTokenFields, StandardTokenResponse, basic::BasicTokenType};
+
 use crate::authorization::{authenticate, get_routes as auth_routes};
 use crate::songlogger::run as run_songlogger;
 
@@ -12,7 +14,7 @@ use crate::songlogger::run as run_songlogger;
 
 #[derive(Debug)]
 pub struct AuthInfo {
-    code: String,
+    access_token: StandardTokenResponse<EmptyExtraTokenFields, BasicTokenType>,
 }
 
 pub struct AuthChannel {

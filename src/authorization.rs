@@ -1,6 +1,6 @@
 use std::env;
 
-use oauth2::{AuthUrl, ClientId, ClientSecret, CsrfToken, RedirectUrl, Scope, basic::BasicClient};
+use oauth2::{AuthorizationCode, AuthUrl, ClientId, ClientSecret, CsrfToken, RedirectUrl, Scope, TokenUrl, basic::BasicClient, reqwest::http_client};
 use rocket::http::RawStr;
 use rocket::Route;
 use rocket::State;
@@ -43,8 +43,20 @@ pub fn authenticate() {
 
 #[get("/callback?<code>")]
 pub fn oauth2_callback(code: &RawStr, channel: State<AuthChannel>) -> &'static str {
+    let vars = Vars::get();
+    let client = BasicClient::new(
+        ClientId::new(vars.client_id),
+        Some(ClientSecret::new(vars.client_secret)),
+        AuthUrl::new(vars.auth_url).expect("Error building AuthUrl"),
+        Some(TokenUrl::new("https://accounts.spotify.com/api/token".into()).expect("Error building TokenUrl"))
+    ).set_redirect_uri(RedirectUrl::new("http://localhost:8000/oauth2/callback".into()).expect("Error building RedirectUrl"));
+
+    let access_token = client
+        .exchange_code(AuthorizationCode::new(code.to_string()))
+        .request(http_client).expect("Failed to get access token");
+
     channel.channel_tx.lock().expect("Failed to acquire auth TX mutex")
-        .send(AuthInfo { code: code.to_string() }).expect("Failed to send auth information");
+        .send(AuthInfo { access_token: access_token }).expect("Failed to send auth information");
 
     "OK"
 }
