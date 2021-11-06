@@ -14,9 +14,15 @@ struct Album {
 }
 
 #[derive(Debug,Deserialize)]
+struct Artist {
+    name: String,
+}
+
+#[derive(Debug,Deserialize)]
 struct Song {
     name: String,
     album: Album,
+    artists: Vec<Artist>,
     uri: String,
 }
 
